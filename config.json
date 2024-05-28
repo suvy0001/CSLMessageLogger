@@ -15,7 +15,7 @@
             "create": false,
             "create_info_": "true: Log message creations | false: Do not log message creations",
 
-            "delete": true,
+            "delete": false,
             "delete_info_": "true: Log delete message events | false: Do not log delete message events",
 
             "edit": false,

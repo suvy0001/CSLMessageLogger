@@ -21,6 +21,7 @@ let config;
 client.on('ready', async () => {
     config = JSON.parse(await fs.readFileSync(__dirname + '/config.json', 'utf8'));
     console.log(`${color.blue('[Notification]')} CSLMessageLogger has been successfully started`);
+    client.user.setPresence({ status: 'invisible' });
 });
 
 client.on('messageCreate', async (message) => {
